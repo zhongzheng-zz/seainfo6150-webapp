@@ -3,12 +3,15 @@ import React from 'react'
 
 const Article = () => {
   return(
-      <div>  
-      <h2>The Statue of Liberty's torch heads to new museum</h2>  
+      <div>
+      <article> 
+        <header>
+      <h1>The Statue of Liberty's torch heads to new museum</h1>  
       <address>
       by Kate Farley <a href="mailto:kate.farlry@nytimes.com">(kate.farley@nytimes.com)</a>  
       </address>
-      <time datetime="2018-11-22" >November 22, 2018</time> 
+      <time dateTime="2018-11-22" >November 22, 2018</time> 
+       </header>
       <p>The Statue of Liberty's original torch is getting a new home.</p>
 
       <p>
@@ -23,8 +26,8 @@ const Article = () => {
       </p>
 
       <p>
-        "Although it is not one of the most difficult things we have ever moved," says Douglas Phelps, who oversaw the relocation of the<br/> 
-        torch, "it is certainly the most important."
+        <q>Although it is not one of the most difficult things we have ever moved,</q> says Douglas Phelps, who oversaw the relocation of the<br/> 
+        torch, <q>it is certainly the most important.</q>
       </p>
 
       <h2>The history of the Statue of Liberty</h2>
@@ -42,12 +45,12 @@ const Article = () => {
       <p>Since then, the statue has served as a symbol of hope and possibility for many people who entered the United States as immigrants <br/>
          via neighboring Ellis Island.
       </p>
-      <p>"The original torch is a beautiful object of art and exemplifies the American ideals of freedom and democracy," says John<br/>
+      <p><q>The original torch is a beautiful object of art and exemplifies the American ideals of freedom and democracy,</q> says John<br/>
          Piltzecker, superintendent of the Statue of Liberty National Monument. That symbolic spirit inspired the decision to inscribe these<br/> 
          famous lines on the statue's pedestal:</p> 
          <blockquote>Give me your tired, your poor<br/>
          Your huddled masses yearning to breathe free.
-         </blockquote>   
+         </blockquote>      
       <p>
         In 2017, nearly 4.5 million people visited Liberty Island.
       </p>
@@ -69,6 +72,7 @@ const Article = () => {
 
         <li>Total weight of the Statue of Liberty is<strong> 225 tons (or 450,000 pounds)</strong></li>
        </ul>
+       </article>
     </div>
   )
 }
