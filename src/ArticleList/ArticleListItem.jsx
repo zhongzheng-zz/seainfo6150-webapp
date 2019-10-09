@@ -1,4 +1,7 @@
 import React from 'react';
+import SlugButton from "./SlugButton";
+import styles from "./ArticleListItem.module.css";
+
 
 class ArticleListItem extends React.Component {
   constructor(props) {
@@ -9,13 +12,16 @@ class ArticleListItem extends React.Component {
   render() {
     return (
       <div>
-        <h2>{this.props.article.title}</h2>
+        <section className={styles.box}>
+        <h2 className={styles.header}>{this.props.article.title}</h2>
         <p>{this.props.article.shortText}</p>
-        <time dateTime={this.props.article.pubYear}>{this.props.article.pubDate}</time><button onClick={() => alert(this.props.article.slug)}>show article slug</button>
+        <time className={styles.dateTime} dateTime={this.props.article.pubYear}>{this.props.article.pubDate}</time>
+        <SlugButton slug={this.props.article.slug} buttonText={this.props.article.author}>
+        </SlugButton>
+        </section>
       </div>
     );
-  }
-
+  };
 }
 
 export default ArticleListItem;
