@@ -1,18 +1,27 @@
-.header{
-    color:rgb(214, 4, 4);
-    font-weight:bold;
-    font-size:1.9rem;
-
-}
-
 .dateTime{
     font-weight:bold;
+    font-size: 11px;
     padding:0rem 0rem 2rem 0rem;
 }
 
 .box{
-    border: 2px solid red;
-    background:white;
+    border: 1px solid rgb(168, 26, 26);
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to right,
+        rgba(180, 65, 65, 0.644),
+        white 20%
+    );
     margin: 2rem 2rem;
     padding: 0rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0px 10px 11px -1px rgb(41, 35, 35);
+}
+
+.wordbox{
+    float:right;
+    
+}
+
+.text{
+    font-size: 14px;
 }

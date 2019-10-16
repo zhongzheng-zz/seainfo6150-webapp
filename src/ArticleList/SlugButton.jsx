@@ -10,7 +10,9 @@ class SlugButton extends React.Component {
   
     render() {
     return (
+        <div className={styles.h}>
         <button className={styles.button} onClick={()=>alert(this.props.slug)}>{this.props.buttonText}</button>
+        </div>
     );
   }
 
