@@ -8,9 +8,9 @@ const ArticleList = props => {
     <ul>
       <section className={styles.container}>
       {props.articles.map(article => (
-        <p key={article.slug}>
+        <li key={article.slug}>
         <ArticleListItem article={article}/>
-        </p>
+        </li>
         ))}
         </section>
     </ul>

@@ -15,6 +15,7 @@ class ArticleListItem extends React.Component {
         <section className={styles.box}>
         <ArticleImage url={this.props.article.image._url} title={this.props.article.title}>
         </ArticleImage>
+        <h2 className={styles.header}>{this.props.article.title}</h2>
         <p className={styles.text}>{this.props.article.shortText}</p>
         <time className={styles.dateTime} dateTime={this.props.article.pubYear}>{this.props.article.pubDate}</time>
         <SlugButton slug={this.props.article.slug} buttonText={this.props.article.author}>

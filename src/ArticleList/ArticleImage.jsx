@@ -10,8 +10,9 @@ class ArticleImage extends React.Component {
   render() {
     return (
       <div>
-          <img className={styles.picbox} alt="" src={this.props.url}/>
-          <h2 className={styles.header}>{this.props.title}</h2>
+          <div>
+            <img className={styles.picbox} alt={this.props.title} src={this.props.url}/>
+          </div>
       </div>
 
       

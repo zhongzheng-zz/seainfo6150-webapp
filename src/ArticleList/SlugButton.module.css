@@ -1,16 +1,16 @@
 .button{
     color:white;
-    font-size: 15px;
+    font-size:15px;
     background:rgb(207, 3, 3);
     position:relative;
     float: right;
     border-radius: 10px;
-    padding:0.5rem 3rem 0.5rem 3rem;
-    margin: 0rem 0.5rem 1rem 50px;
+    padding:10px 0 10px 0;
+    margin-bottom: 40px;
+    width: 100%;
 }
 
 .h{
-    height: 50px;
-    display: flex;
-    align-content: center;
+    /*display: flex;
+    align-content: center;*/
 }
