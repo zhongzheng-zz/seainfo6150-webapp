@@ -12,3 +12,18 @@
     align-self: stretch;
 
 }
+
+
+@media(max-width:700px){
+.container{
+    background: rgb(167, 162, 162);
+    grid-template-columns: 1fr;
+}
+}
+
+@media(min-width:700px) and (max-width:1000px){
+    .container{
+        background: rgb(167, 162, 162);
+        grid-template-columns: 1fr 1fr;
+    }
+    }
